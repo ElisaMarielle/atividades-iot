@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<body style="display: flex; flex-direction: column; justify-content: center; align-items: center; overflow-x: hidden;">
+    <header>
+        <h1>ACME — Dashboard de entradas e saídas da empresa</h1>
+    </header>
+    <div id="diario" style="width:100%;"></div>
+    <div id="semanalmente" style="width:70%;"></div>
+<script>
+    const xArray = [
+    "01/09/2026", "02/09/2026", "03/09/2026", "04/09/2026", "05/09/2026",
+    "06/09/2026", "07/09/2026", "08/09/2026", "09/09/2026", "10/09/2026",
+    "11/09/2026", "12/09/2026", "13/09/2026", "14/09/2026", "15/09/2026",
+    "16/09/2026", "17/09/2026", "18/09/2026", "19/09/2026", "20/09/2026",
+    "21/09/2026", "22/09/2026", "23/09/2026", "24/09/2026", "25/09/2026",
+    "26/09/2026", "27/09/2026", "28/09/2026", "29/09/2026", "30/09/2026"
+    ];
+    const yArray = Array.from({length: xArray.length}, () => Math.floor(Math.random() * 63) + 8);
+
+    const data = [{
+    x:xArray,
+    y:yArray,
+    type:"bar",
+    orientation:"v",
+    marker: {color:"rgba(196, 212, 144,0.6)"}
+    }];
+
+    const layout = {title:"Diáriamente"};
+
+    Plotly.newPlot("diario", data, layout);
+</script>
+<script>
+    const bArray = [
+    "1", "2", "3", "4", "5"
+    ];
+    const aArray = Array.from({length: bArray.length}, () => Math.floor(Math.random() * 63) + 8);
+
+    const content = [{
+    x:bArray,
+    y:aArray,
+    type:"bar",
+    orientation:"v",
+    marker: {color:"rgba(196, 212, 144,0.6)"}
+    }];
+
+    const layou = {title:"Semanalmente"};
+
+    Plotly.newPlot("semanalmente", content, layou);
+</script>
+</body>
+</html>

@@ -34,7 +34,7 @@ void loop()
   delay(1000);
 }
 ```
-
+---
 ### Semáforo de duas vias (aula 3):
 ![semaforo](semaforo.png)
 > Código:
@@ -110,7 +110,7 @@ void loop() {
   digitalWrite(led6, LOW);
 }
 ```
-
+---
 ### Pista de pouso (aula 3):
 ![pista de pouso](pista.png)
 > Código:
@@ -151,7 +151,7 @@ void loop() {
   delay(50);
 }
 ```
-
+---
 ### Servomotor (aula 4):
 ![servomotor](servomotor.png)
 > Código:
@@ -177,7 +177,7 @@ void loop() {
   delayMicroseconds(20000 - tempo);
 }
 ```
-
+---
 ### Experimento com display (aula 4):
 ![display](display.png)
 > Código:
@@ -238,7 +238,7 @@ void numero(int coluna) {
   }
 }
 ```
-
+--- <br>
 ### Simulador de portão (aula 4):
 ![portao](portao.png)
 > Código:

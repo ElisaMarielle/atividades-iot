@@ -238,7 +238,7 @@ void numero(int coluna) {
   }
 }
 ```
---- <br>
+---
 ### Simulador de portão (aula 4):
 ![portao](portao.png)
 > Código:
@@ -308,6 +308,6 @@ void loop() {
   delay(500);
 }
 ```
-
+---
 ### Gráficos da simulação do portão:
 ![gráficos](graficos.png)
